@@ -1,0 +1,17 @@
+id = "agent-workspace-names"
+name = "Agent Workspace Names"
+version = "0.1.0"
+min_herdr_version = "0.9.0"
+description = "Name workspaces after the session title of the coding agent inside (Claude Code and others). Manual renames always win."
+platforms = ["linux", "macos"]
+
+[[startup]]
+command = ["python3", "workspace_names.py"]
+
+[[events]]
+on = "pane.agent_status_changed"
+command = ["python3", "workspace_names.py"]
+
+[[events]]
+on = "workspace.focused"
+command = ["python3", "workspace_names.py"]

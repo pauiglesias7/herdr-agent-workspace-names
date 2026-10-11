@@ -10,13 +10,7 @@ the same repo all show up as `my-repo`. This plugin copies the agent's title to
 the workspace, so the sidebar and the workspace picker (`prefix+w`) tell you
 what each one is doing.
 
-```
-before                 after
-──────                 ─────
-my-repo                Fix login redirect
-my-repo                Migrate billing to Stripe
-my-repo                Flaky e2e test in checkout
-```
+![Before: four workspaces all named my-app. After: each one named after its Claude Code session.](docs/preview.png)
 
 ## Install
 
